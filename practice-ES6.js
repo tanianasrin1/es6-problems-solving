@@ -14,7 +14,6 @@ console.log(result); */
 // const output = (x,y) => (x+2)*(y+2);
 // console.log(output (3,3))
 
-
  
 // ৩.৩ এইবার তিনটা প্যারামিটার ওয়ালা একটা অ্যারো ফাংশন ডিক্লেয়ার করো। যেই ফাংশনের কাজ হবে তিনটা প্যারামিটার নিয়ে সেই তিনটা প্যারামিটারকে গুণ করে সেই রেজাল্ট রিটার্ন করবে। 
 // const math = (x,y,z) => (x*y*z);
@@ -52,3 +51,19 @@ console.log(productName) */
 // [done note khata]
 
 // ৮. সিম্পল একটা জাভাস্ক্রিপ্ট অবজেক্ট এর কোন একটা প্রোপার্টিকে ভেরিয়েবল হিসেবে ডিক্লেয়ার করার জন্য destructuring ইউজ করো। 
+
+/* const student = { name: 'doll', id: 10780, address: 'dhaka-1207', dress: 'uniform'} 
+const {id, name, dress, address} = student
+console.log(id, name, dress) */
+
+// ৯. [চ্যালেঞ্জিং] array এর destructuring করবে আর সেটা করার জন্য তুমি এরে এর থার্ড পজিশন এর উপাদান কে destructuring করে 'three' নামক একটা ভেরিয়েবল এ রাখবে। s
+// const array = []
+
+// ১০. তিনটা প্যারামিটার ওয়ালা একটা ফাংশন লিখবে। যেই ফাংশনের কাজ হবে তিনটা প্যারামিটার নিয়ে সেই তিনটা প্যারামিটার এর যোগ করে যোগফল রিটার্ন করবে। আর থার্ড প্যারামিটার এর একটা ডিফল্ট ভ্যালু থাকবে। সেটা হবে ৭। 
+
+function value(num1, num2, num3 = 7) {
+    const total = num1+ num2+ num3;
+    return total ;
+}
+const result = value(5,6)
+console.log(result)
