@@ -61,9 +61,36 @@ console.log(id, name, dress) */
 
 // ১০. তিনটা প্যারামিটার ওয়ালা একটা ফাংশন লিখবে। যেই ফাংশনের কাজ হবে তিনটা প্যারামিটার নিয়ে সেই তিনটা প্যারামিটার এর যোগ করে যোগফল রিটার্ন করবে। আর থার্ড প্যারামিটার এর একটা ডিফল্ট ভ্যালু থাকবে। সেটা হবে ৭। 
 
-function value(num1, num2, num3 = 7) {
+/* function value(num1, num2, num3 = 7) {
     const total = num1+ num2+ num3;
     return total ;
 }
 const result = value(5,6)
-console.log(result)
+console.log(result) */
+
+// ১১. একটা nested অবজেক্ট ডিক্লেয়ার করো (অর্থাৎ একটা অবজেক্ট এর প্রপার্টি এর মধ্যেও যে অবজেক্ট থাকতে পারে। আবার সেই অবজেক্ট এর প্রপার্টি এর মধ্যেও সে অবজেক্ট থাকতে পারে। সেই রকম একটা অবজেক্ট ডিক্লেয়ার করো। এবং যেকোন একটা প্রপার্টি এর মান একটা array হবে। জাস্ট এমন একটা অবজেক্ট )
+// ১২. উপরের অবজেক্ট এ ডট এর আগে যে প্রশ্নবোধক চিহ্ন দিয়ে যে অপশনাল চেইনিং করা যায়। সেটা একটু প্রাকটিস করো। 
+
+ const company = {
+    name: 'Banglalink',
+    ceo: {
+        id:10780, 
+        name:'ajom',
+        food:'bargur'
+       },
+
+    web:{
+        work:'website',
+        emply: 50,
+        framwork:['react', 'css' ,'html', 'javascript'], 
+        tech:{
+            style:'css',
+            color:'red'
+         }
+       }
+}
+
+// const {framwork, work} = company.web
+// console.log(framwork ,work)
+
+console.log(company?.back?.emply)
